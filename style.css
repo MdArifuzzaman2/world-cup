@@ -1,0 +1,230 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#header-container {
+  display: flex;
+  flex-direction: row;
+  row-gap: 35px;
+  column-gap: 30px;
+  margin: 50px;
+  background-color: rgb(183, 195, 203);
+  border-radius: 50px;
+  margin-top: 40px;
+}
+
+.top-banner {
+  margin-left: 70px;
+  padding: 25px;
+}
+.top-banner1 {
+  margin-right: 35px;
+  margin-top: 45px;
+}
+.top-banner1 img {
+  width: 100%;
+}
+.heading-title {
+  font-size: 40px;
+  color: azure;
+}
+.small-text {
+  text-align: justify;
+}
+.live-session {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: crimson;
+  color: wheat;
+  margin-top: 25px;
+}
+.box {
+  width: 250px;
+  height: 150px;
+  background-color: rgb(158, 19, 19);
+  transition: width 7s ease 3s, height 5s;
+}
+.box:hover {
+  width: 350px;
+  height: 200px;
+  background-color: rgb(98, 111, 107);
+  border: 2px solid lightpink;
+  transform: rotate(45deg);
+}
+
+.fixed-position button {
+  display: flex;
+
+  width: 160px;
+  height: 40px;
+  margin-left: 70px;
+  margin-top: 20px;
+  padding: 15px;
+}
+.blog {
+  border-radius: 30px;
+
+  background-color: rgb(144, 26, 8);
+}
+.match {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 8px;
+  width: 150px;
+  border-radius: 20px;
+}
+.group {
+  display: block;
+  margin-bottom: 20px;
+  padding: 8px;
+  width: 150px;
+  border-radius: 20px;
+}
+/* .blog {
+  display: block;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 12px;
+  width: 60px;
+  background-color: rgb(140, 17, 17);
+} */
+#container-flex {
+  display: flex;
+  margin: 55px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-left: 20px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.blog-post {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+.button-block {
+  display: block;
+}
+span {
+  margin-left: 20px;
+}
+h3 {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  margin-left: 45%;
+  font-size: 25px;
+  background-color: rgb(129, 80, 61);
+  padding: 18px;
+  border: 2px solid crimson;
+  border-radius: 25px;
+}
+.view a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-size: 30px;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+hr {
+  margin-top: 0;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+footer {
+  /* height: 400px; */
+  background-color: rgb(178, 94, 94);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.footer-section {
+  display: flex;
+  gap: 20px;
+  padding: 50px 20px;
+  /* max-width: 1000px; */
+  /* margin: 0 auto; */
+  /* margin-top: 10px;
+  margin-left: 25px;
+  text-align: center;
+  padding-bottom: 20px; */
+}
+.goal {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.social-icons {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 25px;
+  border: 2px solid gray;
+}
+.footer-flex {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+/* .fa-facebook {
+  margin-left: 15px;
+}
+b {
+  margin-right: 30px;
+} */
+/* @media only screen and (max-width: 576) {
+  .footer-section {
+    flex-direction: row;
+  }
+} */
+@media screen and (max-width: 600px) {
+  #container-flex {
+    flex-direction: column;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #header-container {
+    flex-direction: column;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .top-banner1 img {
+    width: 100%;
+  }
+  #grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-section {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 815px) {
+  #container-flex {
+    flex-direction: column;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 816px) and (max-width: 1040px) {
+  #container-flex {
+    flex-direction: column;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
